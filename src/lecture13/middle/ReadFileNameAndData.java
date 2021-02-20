@@ -18,8 +18,26 @@ import java.io.IOException;
  *
  */
 public class ReadFileNameAndData {
+
 	public static void main(String[] args) throws IOException {
+		/*
+		 * System.out.println("Enter the numbers of method which will be used:" + "\n" +
+		 * " 1 - ReadLineWithBufferedReader()" + "\n" + "2 - ReadLineWithScanner()" +
+		 * "\n" + "3 - ReadLineWithBufferedReaderAllLines()");
+		 * 
+		 * Реализовано три варианта считывания данных из текстового документа с
+		 * последующим выводом в консоль. 
+		 * Первый на основе BufferedReader(считывает всё
+		 * правильно, с абазацами, но не проходит тест на валидность, бесконечный цикл.)
+		 * Второй на основе BufferedReader, но реализован по другому, выводим на
+		 * консольвсе символы, но нет перевода строк. 
+		 * Третий, при помощи Scanner, проходит все тесты.
+		 * В дальнейшем вынести все переменные ответсвтенные за ввода данных вынести в тело класса.
+		 * 
+		 */
+
 		ReadLineWithBufferedReader();
+		ReadLineWithBufferedReaderAllLines();
 		ReadLineWithScanner();
 	}
 
@@ -37,6 +55,22 @@ public class ReadFileNameAndData {
 		System.out.println(ans);
 		bf.close();
 		sc.close();
+	}
+
+	public static void ReadLineWithBufferedReaderAllLines() throws IOException {
+		System.out.println("Enter your's file name:");
+		Scanner sc = new Scanner(System.in);
+		String fileName = sc.nextLine();
+		BufferedReader bf = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)));
+		String line = bf.readLine();
+		String ans = "";
+		while (line != null && !line.isEmpty()) {
+			ans += line;
+			line = bf.readLine();
+		}
+		sc.close();
+		bf.close();
+		System.out.println(ans);
 	}
 
 	public static void ReadLineWithScanner() throws IOException {
