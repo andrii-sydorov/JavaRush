@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * 1. Создай класс Human с полями имя (String), пол (boolean), возраст (int),
- * дети (ArrayList<Human>). 
- * 2. Создай объекты и заполни их так, чтобы
- * получилось: два дедушки, две бабушки, отец, мать, трое детей. 
- * 3. Выведи все объекты Human на экран (Подсказка: используй метод toString() 
- * класса Human).
+ * 1. РЎРѕР·РґР°Р№ РєР»Р°СЃСЃ Human СЃ РїРѕР»СЏРјРё РёРјСЏ (String), РїРѕР» (boolean), РІРѕР·СЂР°СЃС‚ (int),
+ * РґРµС‚Рё (ArrayList<Human>). 
+ * 2. РЎРѕР·РґР°Р№ РѕР±СЉРµРєС‚С‹ Рё Р·Р°РїРѕР»РЅРё РёС… С‚Р°Рє, С‡С‚РѕР±С‹
+ * РїРѕР»СѓС‡РёР»РѕСЃСЊ: РґРІР° РґРµРґСѓС€РєРё, РґРІРµ Р±Р°Р±СѓС€РєРё, РѕС‚РµС†, РјР°С‚СЊ, С‚СЂРѕРµ РґРµС‚РµР№. 
+ * 3. Р’С‹РІРµРґРё РІСЃРµ РѕР±СЉРµРєС‚С‹ Human РЅР° СЌРєСЂР°РЅ (РџРѕРґСЃРєР°Р·РєР°: РёСЃРїРѕР»СЊР·СѓР№ РјРµС‚РѕРґ toString() 
+ * РєР»Р°СЃСЃР° Human).
  * 
  * @author SMD_ASY
  *
@@ -68,7 +68,7 @@ public class CreateFamily {
 	}
 
 	public static class Human {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		String name;
 		boolean sex;
 		int age;
@@ -82,13 +82,13 @@ public class CreateFamily {
 
 		public String toString() {
 			String text = "";
-			text += "Имя: " + this.name;
-			text += ", пол: " + (this.sex ? "мужской" : "женский");
-			text += ", возраст: " + this.age;
+			text += "РРјСЏ: " + this.name;
+			text += ", РїРѕР»: " + (this.sex ? "РјСѓР¶СЃРєРѕР№" : "Р¶РµРЅСЃРєРёР№");
+			text += ", РІРѕР·СЂР°СЃС‚: " + this.age;
 
 			int childCount = this.children.size();
 			if (childCount > 0) {
-				text += ", дети: " + this.children.get(0).name;
+				text += ", РґРµС‚Рё: " + this.children.get(0).name;
 
 				for (int i = 1; i < childCount; i++) {
 					Human child = this.children.get(i);

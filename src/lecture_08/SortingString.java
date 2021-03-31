@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.io.IOException;
 
 /**
- * Задача: Введи с клавиатуры 20 слов и выведи их в алфавитном порядке. 
- * Каждое слово - с новой строки.
+ * Р—Р°РґР°С‡Р°: Р’РІРµРґРё СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ 20 СЃР»РѕРІ Рё РІС‹РІРµРґРё РёС… РІ Р°Р»С„Р°РІРёС‚РЅРѕРј РїРѕСЂСЏРґРєРµ. 
+ * РљР°Р¶РґРѕРµ СЃР»РѕРІРѕ - СЃ РЅРѕРІРѕР№ СЃС‚СЂРѕРєРё.
  * 
  * @author SMD_ASY
  *
@@ -48,7 +48,7 @@ public class SortingString {
 	}
 
 	public static void sort2(String[] array) {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		for (int i = 0; i < array.length; i++) {
 			for (int j = i; j < array.length; j++) {
 				if (isGreaterThan(array[i], array[j])) {

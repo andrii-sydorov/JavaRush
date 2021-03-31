@@ -3,13 +3,13 @@ package lecture_15.middle.Overload;
 import java.math.*;
 
 /**
- * Для решения этой задачи:
+ * Р”Р»СЏ СЂРµС€РµРЅРёСЏ СЌС‚РѕР№ Р·Р°РґР°С‡Рё:
  * 
- * 	Два раза перегрузи в классе Tree метод info(Object s) так, чтобы получилось
- * три метода: info(Object s), info(Number s), info(String s). 
- * 	Разберись в методе info(Object s).
- *  Сделай по аналогии функционал новых методов.
- *  Например, для метода info(Number s) результат может быть таким: "Дерево № 123 , метод Number, параметр Short".
+ * 	Р”РІР° СЂР°Р·Р° РїРµСЂРµРіСЂСѓР·Рё РІ РєР»Р°СЃСЃРµ Tree РјРµС‚РѕРґ info(Object s) С‚Р°Рє, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёР»РѕСЃСЊ
+ * С‚СЂРё РјРµС‚РѕРґР°: info(Object s), info(Number s), info(String s). 
+ * 	Р Р°Р·Р±РµСЂРёСЃСЊ РІ РјРµС‚РѕРґРµ info(Object s).
+ *  РЎРґРµР»Р°Р№ РїРѕ Р°РЅР°Р»РѕРіРёРё С„СѓРЅРєС†РёРѕРЅР°Р» РЅРѕРІС‹С… РјРµС‚РѕРґРѕРІ.
+ *  РќР°РїСЂРёРјРµСЂ, РґР»СЏ РјРµС‚РѕРґР° info(Number s) СЂРµР·СѓР»СЊС‚Р°С‚ РјРѕР¶РµС‚ Р±С‹С‚СЊ С‚Р°РєРёРј: "Р”РµСЂРµРІРѕ в„– 123 , РјРµС‚РѕРґ Number, РїР°СЂР°РјРµС‚СЂ Short".
  * 
  * @author SMD_ASY
  *
@@ -17,20 +17,20 @@ import java.math.*;
 
 public class Main {
 	public static void main(String[] args) {
-		// Блок 2.
-		// Вызов для Object
+		// Р‘Р»РѕРє 2.
+		// Р’С‹Р·РѕРІ РґР»СЏ Object
 		new Tree().info((Object) new Integer("4"));
 		new Tree().info((Object) new Short("4"));
 		new Tree().info((Object) new BigDecimal("4"));
 
-		// Блок 3.
-		// Вызов для Number
+		// Р‘Р»РѕРє 3.
+		// Р’С‹Р·РѕРІ РґР»СЏ Number
 		new Tree().info(new Integer("4"));
 		new Tree().info(new Short("4"));
 		new Tree().info(new BigDecimal("4"));
 
-		// Блок 4.
-		// Вызов для String
+		// Р‘Р»РѕРє 4.
+		// Р’С‹Р·РѕРІ РґР»СЏ String
 		new Tree().info(new String("4"));
 		new Tree().info(new Integer("4").toString());
 		new Tree().info(new Short("4").toString());

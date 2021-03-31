@@ -1,14 +1,14 @@
 package lecture_13.hard.BattleRobot;
 
 /**
- * Для начала разберись в том, что делает код: это будет непросто. Затем измени
- * код согласно новой архитектуре и добавь новую логику:
+ * Р”Р»СЏ РЅР°С‡Р°Р»Р° СЂР°Р·Р±РµСЂРёСЃСЊ РІ С‚РѕРј, С‡С‚Рѕ РґРµР»Р°РµС‚ РєРѕРґ: СЌС‚Рѕ Р±СѓРґРµС‚ РЅРµРїСЂРѕСЃС‚Рѕ. Р—Р°С‚РµРј РёР·РјРµРЅРё
+ * РєРѕРґ СЃРѕРіР»Р°СЃРЅРѕ РЅРѕРІРѕР№ Р°СЂС…РёС‚РµРєС‚СѓСЂРµ Рё РґРѕР±Р°РІСЊ РЅРѕРІСѓСЋ Р»РѕРіРёРєСѓ:
  * 
- * Сделай класс AbstractRobot абстрактным, вынеси логику атаки и защиты из Robot
- * в AbstractRobot. 
- * Отредактируй класс Robot, учитывая AbstractRobot. 
- * Расширь класс BodyPart новой частью тела BodyPart.CHEST("грудь"). 
- * Добавь новую часть тела в реализацию интерфейсов Attackable и Defensable (в классе
+ * РЎРґРµР»Р°Р№ РєР»Р°СЃСЃ AbstractRobot Р°Р±СЃС‚СЂР°РєС‚РЅС‹Рј, РІС‹РЅРµСЃРё Р»РѕРіРёРєСѓ Р°С‚Р°РєРё Рё Р·Р°С‰РёС‚С‹ РёР· Robot
+ * РІ AbstractRobot. 
+ * РћС‚СЂРµРґР°РєС‚РёСЂСѓР№ РєР»Р°СЃСЃ Robot, СѓС‡РёС‚С‹РІР°СЏ AbstractRobot. 
+ * Р Р°СЃС€РёСЂСЊ РєР»Р°СЃСЃ BodyPart РЅРѕРІРѕР№ С‡Р°СЃС‚СЊСЋ С‚РµР»Р° BodyPart.CHEST("РіСЂСѓРґСЊ"). 
+ * Р”РѕР±Р°РІСЊ РЅРѕРІСѓСЋ С‡Р°СЃС‚СЊ С‚РµР»Р° РІ СЂРµР°Р»РёР·Р°С†РёСЋ РёРЅС‚РµСЂС„РµР№СЃРѕРІ Attackable Рё Defensable (РІ РєР»Р°СЃСЃРµ
  * AbstractRobot).
  * 
  * @author ASY
@@ -17,8 +17,8 @@ package lecture_13.hard.BattleRobot;
 public class Main {
 
 	public static void main(String[] args) {
-		Robot amigo = new Robot("Амиго");
-		Robot enemy = new Robot("Сгибальщик-02");
+		Robot amigo = new Robot("РђРјРёРіРѕ");
+		Robot enemy = new Robot("РЎРіРёР±Р°Р»СЊС‰РёРє-02");
 
 		doMove(amigo, enemy);
 		doMove(amigo, enemy);
@@ -33,7 +33,7 @@ public class Main {
 	public static void doMove(AbstractRobot robotFirst, AbstractRobot robotSecond) {
 		BodyPart attacked = robotFirst.attack();
 		BodyPart defenced = robotFirst.defense();
-		System.out.println(String.format("%s атаковал робота %s, атакована %s, защищена %s", robotFirst.getName(),
+		System.out.println(String.format("%s Р°С‚Р°РєРѕРІР°Р» СЂРѕР±РѕС‚Р° %s, Р°С‚Р°РєРѕРІР°РЅР° %s, Р·Р°С‰РёС‰РµРЅР° %s", robotFirst.getName(),
 				robotSecond.getName(), attacked, defenced));
 	}
 

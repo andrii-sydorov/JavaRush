@@ -9,8 +9,8 @@ public class MoldovanHen extends Hen {
 
 	@Override
 	public String getDescription() {
-		return super.getDescription() + " Моя страна - Moldova. Я несу " + this.getCountOfEggsPerMonth()
-				+ " яиц в месяц.";
+		return super.getDescription() + " РњРѕСЏ СЃС‚СЂР°РЅР° - Moldova. РЇ РЅРµСЃСѓ " + this.getCountOfEggsPerMonth()
+				+ " СЏРёС† РІ РјРµСЃСЏС†.";
 	}
 
 }

@@ -1,9 +1,9 @@
 package lecture_16.middle;
 
 /**
- * Разберись, как работает программа. По образу и подобию CountdownRunnable
- * создай нить CountUpRunnable, которая выводит значения в нормальном порядке -
- * от 1 до number.
+ * Р Р°Р·Р±РµСЂРёСЃСЊ, РєР°Рє СЂР°Р±РѕС‚Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. РџРѕ РѕР±СЂР°Р·Сѓ Рё РїРѕРґРѕР±РёСЋ CountdownRunnable
+ * СЃРѕР·РґР°Р№ РЅРёС‚СЊ CountUpRunnable, РєРѕС‚РѕСЂР°СЏ РІС‹РІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёСЏ РІ РЅРѕСЂРјР°Р»СЊРЅРѕРј РїРѕСЂСЏРґРєРµ -
+ * РѕС‚ 1 РґРѕ number.
  * 
  * @author SMD_ASY
  *
@@ -15,8 +15,8 @@ public class CountUpCountDown {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new Thread(new CountUpRunnable(), "по возрастанию").start();
-		new Thread(new CountDownRunnable(), "по убыванию").start();
+		new Thread(new CountUpRunnable(), "РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ").start();
+		new Thread(new CountDownRunnable(), "РїРѕ СѓР±С‹РІР°РЅРёСЋ").start();
 	}
 
 	public static class CountUpRunnable implements Runnable {

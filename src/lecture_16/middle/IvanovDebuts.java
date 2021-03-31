@@ -1,9 +1,9 @@
 package lecture_16.middle;
 
 /**
- * 1. Разберись, что делает программа. 
- * 2. Нужно сделать так, чтобы Иванов сказал больше всего речей на политических дебатах. 
- * 3. Подумай, какой метод можно вызвать у объекта ivanov, чтобы Иванов разговаривал, пока не завершится всё свободное время.
+ * 1. Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. 
+ * 2. РќСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ С‚Р°Рє, С‡С‚РѕР±С‹ РРІР°РЅРѕРІ СЃРєР°Р·Р°Р» Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ СЂРµС‡РµР№ РЅР° РїРѕР»РёС‚РёС‡РµСЃРєРёС… РґРµР±Р°С‚Р°С…. 
+ * 3. РџРѕРґСѓРјР°Р№, РєР°РєРѕР№ РјРµС‚РѕРґ РјРѕР¶РЅРѕ РІС‹Р·РІР°С‚СЊ Сѓ РѕР±СЉРµРєС‚Р° ivanov, С‡С‚РѕР±С‹ РРІР°РЅРѕРІ СЂР°Р·РіРѕРІР°СЂРёРІР°Р», РїРѕРєР° РЅРµ Р·Р°РІРµСЂС€РёС‚СЃСЏ РІСЃС‘ СЃРІРѕР±РѕРґРЅРѕРµ РІСЂРµРјСЏ.
  * 
  * @author SMD_ASY
  *
@@ -16,10 +16,10 @@ public class IvanovDebuts {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		Politician ivanov = new Politician("Иванов");
+		Politician ivanov = new Politician("РРІР°РЅРѕРІ");
 		ivanov.join();
-		Politician petrov = new Politician("Петров");
-		Politician sidorov = new Politician("Сидоров");
+		Politician petrov = new Politician("РџРµС‚СЂРѕРІ");
+		Politician sidorov = new Politician("РЎРёРґРѕСЂРѕРІ");
 
 		while (ivanov.getSpeechCount() + petrov.getSpeechCount() + sidorov.getSpeechCount() < totalSpeechCount) {
 		}
@@ -49,7 +49,7 @@ public class IvanovDebuts {
 
 		@Override
 		public String toString() {
-			return String.format("%s сказал речь %d раз", getName(), getSpeechCount());
+			return String.format("%s СЃРєР°Р·Р°Р» СЂРµС‡СЊ %d СЂР°Р·", getName(), getSpeechCount());
 		}
 	}
 
