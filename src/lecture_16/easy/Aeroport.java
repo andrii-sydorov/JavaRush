@@ -1,9 +1,9 @@
 package lecture_16.easy;
 
 /**
- * 1. Разберись, что делает программа. 
- * 2. Исправь метод takingOff(взлет) - сейчас он работает оооочень долго. Взлет должен занимать 100 миллисекунд. 
- * 3. Реализуй метод waiting по аналогии с методом takingOff. Время ожидания не должно превышать время взлета.
+ * 1. Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. 
+ * 2. РСЃРїСЂР°РІСЊ РјРµС‚РѕРґ takingOff(РІР·Р»РµС‚) - СЃРµР№С‡Р°СЃ РѕРЅ СЂР°Р±РѕС‚Р°РµС‚ РѕРѕРѕРѕС‡РµРЅСЊ РґРѕР»РіРѕ. Р’Р·Р»РµС‚ РґРѕР»Р¶РµРЅ Р·Р°РЅРёРјР°С‚СЊ 100 РјРёР»Р»РёСЃРµРєСѓРЅРґ. 
+ * 3. Р РµР°Р»РёР·СѓР№ РјРµС‚РѕРґ waiting РїРѕ Р°РЅР°Р»РѕРіРёРё СЃ РјРµС‚РѕРґРѕРј takingOff. Р’СЂРµРјСЏ РѕР¶РёРґР°РЅРёСЏ РЅРµ РґРѕР»Р¶РЅРѕ РїСЂРµРІС‹С€Р°С‚СЊ РІСЂРµРјСЏ РІР·Р»РµС‚Р°.
  * 
  * @author SMD_ASY
  *
@@ -14,9 +14,9 @@ public class Aeroport {
 	public static volatile Runway RUNWAY = new Runway();
 
 	public static void main(String[] args) {
-		Plane plane1 = new Plane("Самолет #1");
-		Plane plane2 = new Plane("Самолет #2");
-		Plane plane3 = new Plane("Самолет #3");
+		Plane plane1 = new Plane("РЎР°РјРѕР»РµС‚ #1");
+		Plane plane2 = new Plane("РЎР°РјРѕР»РµС‚ #2");
+		Plane plane3 = new Plane("РЎР°РјРѕР»РµС‚ #3");
 	}
 
 	private static void waiting() {
@@ -42,21 +42,21 @@ public class Aeroport {
 		public void run() {
 			boolean isAlreadyTakenOff = false;
 			while (!isAlreadyTakenOff) {
-				if (RUNWAY.trySetTakingOffPlane(this)) { // если взлетная полоса свободна, занимаем ее
-					System.out.println(getName() + " взлетает");
-					takingOff();// взлетает
-					System.out.println(getName() + " уже в небе");
+				if (RUNWAY.trySetTakingOffPlane(this)) { // РµСЃР»Рё РІР·Р»РµС‚РЅР°СЏ РїРѕР»РѕСЃР° СЃРІРѕР±РѕРґРЅР°, Р·Р°РЅРёРјР°РµРј РµРµ
+					System.out.println(getName() + " РІР·Р»РµС‚Р°РµС‚");
+					takingOff();// РІР·Р»РµС‚Р°РµС‚
+					System.out.println(getName() + " СѓР¶Рµ РІ РЅРµР±Рµ");
 					isAlreadyTakenOff = true;
 					RUNWAY.setTakingOffPlane(null);
-				} else if (!this.equals(RUNWAY.getTakingOffPlane())) { // если взлетная полоса занята самолетом
-					System.out.println(getName() + " ожидает");
-					waiting(); // ожидает
+				} else if (!this.equals(RUNWAY.getTakingOffPlane())) { // РµСЃР»Рё РІР·Р»РµС‚РЅР°СЏ РїРѕР»РѕСЃР° Р·Р°РЅСЏС‚Р° СЃР°РјРѕР»РµС‚РѕРј
+					System.out.println(getName() + " РѕР¶РёРґР°РµС‚");
+					waiting(); // РѕР¶РёРґР°РµС‚
 				}
 			}
 		}
 	}
 
-	public static class Runway { // взлетная полоса
+	public static class Runway { // РІР·Р»РµС‚РЅР°СЏ РїРѕР»РѕСЃР°
 		private Thread t;
 
 		public Thread getTakingOffPlane() {
