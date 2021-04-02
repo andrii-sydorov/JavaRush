@@ -18,7 +18,7 @@ public class RemoveCats {
 	}
 
 	public static Set<Cat> createCats() {
-		// напишите тут ваш код. step 2 - пункт 2
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ. step 2 - РїСѓРЅРєС‚ 2
 		Set<Cat> cats = new HashSet<>();
 		cats.add(new Cat());
 		cats.add(new Cat());
@@ -27,13 +27,13 @@ public class RemoveCats {
 	}
 
 	public static void printCats(Set<Cat> cats) {
-		// step 4 - пункт 4
+		// step 4 - РїСѓРЅРєС‚ 4
 		for (Cat cat : cats) {
 			System.out.println(cat);
 		}
 	}
 
-	// step 1 - пункт 1
+	// step 1 - РїСѓРЅРєС‚ 1
 	public static class Cat {
 
 	}

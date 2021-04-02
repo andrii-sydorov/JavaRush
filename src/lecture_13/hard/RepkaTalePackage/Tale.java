@@ -4,18 +4,18 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * Давай напишем программу по мотивам сказки "Репка":
+ * Р”Р°РІР°Р№ РЅР°РїРёС€РµРј РїСЂРѕРіСЂР°РјРјСѓ РїРѕ РјРѕС‚РёРІР°Рј СЃРєР°Р·РєРё "Р РµРїРєР°":
  * 
- * Реализуй интерфейс RepkaItem в классе Person. 
- * В классе Person реализуй метод pull(Person person), который выводит фразу типа '<name> за <person>'.
+ * Р РµР°Р»РёР·СѓР№ РёРЅС‚РµСЂС„РµР№СЃ RepkaItem РІ РєР»Р°СЃСЃРµ Person. 
+ * Р’ РєР»Р°СЃСЃРµ Person СЂРµР°Р»РёР·СѓР№ РјРµС‚РѕРґ pull(Person person), РєРѕС‚РѕСЂС‹Р№ РІС‹РІРѕРґРёС‚ С„СЂР°Р·Сѓ С‚РёРїР° '<name> Р·Р° <person>'.
  * 
- * Пример: 
- * Бабка за Дедку 
- * Дедка за Репку 
+ * РџСЂРёРјРµСЂ: 
+ * Р‘Р°Р±РєР° Р·Р° Р”РµРґРєСѓ 
+ * Р”РµРґРєР° Р·Р° Р РµРїРєСѓ 
  * 
- * Исправь логическую ошибку цикла в методе tell класса RepkaStory. 
+ * РСЃРїСЂР°РІСЊ Р»РѕРіРёС‡РµСЃРєСѓСЋ РѕС€РёР±РєСѓ С†РёРєР»Р° РІ РјРµС‚РѕРґРµ tell РєР»Р°СЃСЃР° RepkaStory. 
  * 
- * Выполни метод main и наслаждайся сказкой!
+ * Р’С‹РїРѕР»РЅРё РјРµС‚РѕРґ main Рё РЅР°СЃР»Р°Р¶РґР°Р№СЃСЏ СЃРєР°Р·РєРѕР№!
  * 
  * @author ASY
  *
@@ -25,10 +25,10 @@ public class Tale {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<Person> plot = new ArrayList<Person>();
-		plot.add(new Person("Репка", "Репку"));
-		plot.add(new Person("Дедка", "Дедку"));
-		plot.add(new Person("Бабка", "Бабку"));
-		plot.add(new Person("Внучка", "Внучку"));
+		plot.add(new Person("Р РµРїРєР°", "Р РµРїРєСѓ"));
+		plot.add(new Person("Р”РµРґРєР°", "Р”РµРґРєСѓ"));
+		plot.add(new Person("Р‘Р°Р±РєР°", "Р‘Р°Р±РєСѓ"));
+		plot.add(new Person("Р’РЅСѓС‡РєР°", "Р’РЅСѓС‡РєСѓ"));
 		RepkaStory.tell(plot);
 	}
 

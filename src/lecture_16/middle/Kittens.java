@@ -1,13 +1,13 @@
 package lecture_16.middle;
 
 /**
- * 1. Разберись, что делает программа. 
- * 2. Расставь вызовы методов join() так, чтобы для каждой кошки выполнялось следующее:
- *  2.1. Сначала кошка рожает котят.
- *  2.2. Потом все котята вылазят из корзинки в произвольном порядке.
- *  2.3. В конце кошка собирает их назад в корзинку. 
- *  2.4. Все события для одной кошки могут быть перемешаны с событиями для другой кошки. 
- *  2.5. Добавить сон котят (200 мс) в investigateWorld.
+ * 1. Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. 
+ * 2. Р Р°СЃСЃС‚Р°РІСЊ РІС‹Р·РѕРІС‹ РјРµС‚РѕРґРѕРІ join() С‚Р°Рє, С‡С‚РѕР±С‹ РґР»СЏ РєР°Р¶РґРѕР№ РєРѕС€РєРё РІС‹РїРѕР»РЅСЏР»РѕСЃСЊ СЃР»РµРґСѓСЋС‰РµРµ:
+ *  2.1. РЎРЅР°С‡Р°Р»Р° РєРѕС€РєР° СЂРѕР¶Р°РµС‚ РєРѕС‚СЏС‚.
+ *  2.2. РџРѕС‚РѕРј РІСЃРµ РєРѕС‚СЏС‚Р° РІС‹Р»Р°Р·СЏС‚ РёР· РєРѕСЂР·РёРЅРєРё РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕРј РїРѕСЂСЏРґРєРµ.
+ *  2.3. Р’ РєРѕРЅС†Рµ РєРѕС€РєР° СЃРѕР±РёСЂР°РµС‚ РёС… РЅР°Р·Р°Рґ РІ РєРѕСЂР·РёРЅРєСѓ. 
+ *  2.4. Р’СЃРµ СЃРѕР±С‹С‚РёСЏ РґР»СЏ РѕРґРЅРѕР№ РєРѕС€РєРё РјРѕРіСѓС‚ Р±С‹С‚СЊ РїРµСЂРµРјРµС€Р°РЅС‹ СЃ СЃРѕР±С‹С‚РёСЏРјРё РґР»СЏ РґСЂСѓРіРѕР№ РєРѕС€РєРё. 
+ *  2.5. Р”РѕР±Р°РІРёС‚СЊ СЃРѕРЅ РєРѕС‚СЏС‚ (200 РјСЃ) РІ investigateWorld.
  * 
  * @author SMD_ASY
  *
@@ -17,8 +17,8 @@ public class Kittens {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Cat cat1 = new Cat("Мурка");
-		Cat cat2 = new Cat("Пушинка");
+		Cat cat1 = new Cat("РњСѓСЂРєР°");
+		Cat cat2 = new Cat("РџСѓС€РёРЅРєР°");
 	}
 
 	private static void investigateWorld() {
@@ -34,20 +34,20 @@ public class Kittens {
 
 		public Cat(String name) {
 			super(name);
-			kitten1 = new Kitten("Котенок 1, мама - " + getName());
-			kitten2 = new Kitten("Котенок 2, мама - " + getName());
+			kitten1 = new Kitten("РљРѕС‚РµРЅРѕРє 1, РјР°РјР° - " + getName());
+			kitten2 = new Kitten("РљРѕС‚РµРЅРѕРє 2, РјР°РјР° - " + getName());
 			start();
 		}
 
 		public void run() {
-			System.out.println(getName() + " родила 2 котенка");
+			System.out.println(getName() + " СЂРѕРґРёР»Р° 2 РєРѕС‚РµРЅРєР°");
 			try {
 				initAllKittens();
 				kitten1.join();
 				kitten2.join();
 			} catch (InterruptedException e) {
 			}
-			System.out.println(getName() + ": Все котята в корзинке. " + getName() + " собрала их назад");
+			System.out.println(getName() + ": Р’СЃРµ РєРѕС‚СЏС‚Р° РІ РєРѕСЂР·РёРЅРєРµ. " + getName() + " СЃРѕР±СЂР°Р»Р° РёС… РЅР°Р·Р°Рґ");
 		}
 
 		private void initAllKittens() throws InterruptedException {
@@ -62,7 +62,7 @@ public class Kittens {
 		}
 
 		public void run() {
-			System.out.println(getName() + ", вылез из корзинки");
+			System.out.println(getName() + ", РІС‹Р»РµР· РёР· РєРѕСЂР·РёРЅРєРё");
 			investigateWorld();
 		}
 	}

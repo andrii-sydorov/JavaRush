@@ -10,9 +10,9 @@ import java.text.SimpleDateFormat;
 import java.util.Iterator;
 
 /**
- * Создать словарь (Map<String, Date>) и занести в него десять записей по
- * принципу: "фамилия" - "дата рождения". Удалить из словаря всех людей,
- * родившихся летом.
+ * РЎРѕР·РґР°С‚СЊ СЃР»РѕРІР°СЂСЊ (Map<String, Date>) Рё Р·Р°РЅРµСЃС‚Рё РІ РЅРµРіРѕ РґРµСЃСЏС‚СЊ Р·Р°РїРёСЃРµР№ РїРѕ
+ * РїСЂРёРЅС†РёРїСѓ: "С„Р°РјРёР»РёСЏ" - "РґР°С‚Р° СЂРѕР¶РґРµРЅРёСЏ". РЈРґР°Р»РёС‚СЊ РёР· СЃР»РѕРІР°СЂСЏ РІСЃРµС… Р»СЋРґРµР№,
+ * СЂРѕРґРёРІС€РёС…СЃСЏ Р»РµС‚РѕРј.
  * 
  * @author SMD_ASY
  *
@@ -33,18 +33,18 @@ public class DeletePeopleSummer {
 	public static Map<String, Date> createMap() throws ParseException {
 		DateFormat dateFormat = new SimpleDateFormat("MMMMM d yyyy", Locale.ENGLISH);
 		Map<String, Date> map = new HashMap<>();
-		map.put("Смирнов", dateFormat.parse("MAY 1 2012"));
-		map.put("Петров", dateFormat.parse("APRIL 1 2012"));
-		map.put("Гордон", dateFormat.parse("JUNE 1 2012"));
-		map.put("Иванов", dateFormat.parse("DECEMBER 1 2012"));
-		map.put("Макаров", dateFormat.parse("JULY 1 2012"));
-		map.put("Дмитриев", dateFormat.parse("FEBRUARY 1 2012"));
-		map.put("Гордеев", dateFormat.parse("AUGUST 1 2012"));
-		map.put("Козлов", dateFormat.parse("SEPTEMBER 1 2012"));
-		map.put("Кизило", dateFormat.parse("MARCH 1 2012"));
-		map.put("Зеленский", dateFormat.parse("NOVEMBER 1 2012"));
+		map.put("РЎРјРёСЂРЅРѕРІ", dateFormat.parse("MAY 1 2012"));
+		map.put("РџРµС‚СЂРѕРІ", dateFormat.parse("APRIL 1 2012"));
+		map.put("Р“РѕСЂРґРѕРЅ", dateFormat.parse("JUNE 1 2012"));
+		map.put("РРІР°РЅРѕРІ", dateFormat.parse("DECEMBER 1 2012"));
+		map.put("РњР°РєР°СЂРѕРІ", dateFormat.parse("JULY 1 2012"));
+		map.put("Р”РјРёС‚СЂРёРµРІ", dateFormat.parse("FEBRUARY 1 2012"));
+		map.put("Р“РѕСЂРґРµРµРІ", dateFormat.parse("AUGUST 1 2012"));
+		map.put("РљРѕР·Р»РѕРІ", dateFormat.parse("SEPTEMBER 1 2012"));
+		map.put("РљРёР·РёР»Рѕ", dateFormat.parse("MARCH 1 2012"));
+		map.put("Р—РµР»РµРЅСЃРєРёР№", dateFormat.parse("NOVEMBER 1 2012"));
 
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		return map;
 	}
 

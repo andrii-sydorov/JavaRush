@@ -1,9 +1,9 @@
 package lecture_16.easy;
 
 /**
- * 1. Создать public static класс TestThread, унаследованный от класса Thread.
- * 2. Создать статик блок внутри TestThread, который выводит в консоль "it's a static block inside TestThread". 
- * 3. Метод run должен выводить в консоль "it's a run method".
+ * 1. РЎРѕР·РґР°С‚СЊ public static РєР»Р°СЃСЃ TestThread, СѓРЅР°СЃР»РµРґРѕРІР°РЅРЅС‹Р№ РѕС‚ РєР»Р°СЃСЃР° Thread.
+ * 2. РЎРѕР·РґР°С‚СЊ СЃС‚Р°С‚РёРє Р±Р»РѕРє РІРЅСѓС‚СЂРё TestThread, РєРѕС‚РѕСЂС‹Р№ РІС‹РІРѕРґРёС‚ РІ РєРѕРЅСЃРѕР»СЊ "it's a static block inside TestThread". 
+ * 3. РњРµС‚РѕРґ run РґРѕР»Р¶РµРЅ РІС‹РІРѕРґРёС‚СЊ РІ РєРѕРЅСЃРѕР»СЊ "it's a run method".
  * 
  * @author SMD_ASY
  *

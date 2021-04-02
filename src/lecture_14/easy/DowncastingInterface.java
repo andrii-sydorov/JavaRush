@@ -4,11 +4,11 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * Посмотри, что делает эта программа. Затем измени haveFun так, чтобы он
- * вызывал метод:
+ * РџРѕСЃРјРѕС‚СЂРё, С‡С‚Рѕ РґРµР»Р°РµС‚ СЌС‚Р° РїСЂРѕРіСЂР°РјРјР°. Р—Р°С‚РµРј РёР·РјРµРЅРё haveFun С‚Р°Рє, С‡С‚РѕР±С‹ РѕРЅ
+ * РІС‹Р·С‹РІР°Р» РјРµС‚РѕРґ:
  * 
- * play(), если person имеет тип Player. 
- * dance(), если person имеет тип Dancer
+ * play(), РµСЃР»Рё person РёРјРµРµС‚ С‚РёРї Player. 
+ * dance(), РµСЃР»Рё person РёРјРµРµС‚ С‚РёРї Dancer
  * 
  * @author SMD_ASY
  *

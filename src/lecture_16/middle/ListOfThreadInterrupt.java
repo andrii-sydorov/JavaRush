@@ -4,12 +4,12 @@ import java.util.List;
 import java.util.ArrayList;
 
 /**
- * 1. Разберись, как работает программа. 
- *  1.1. Обрати внимание, что объект Water - один для всех нитей. 
- * 2. Реализуй метод ourInterruptMethod, чтобы он прерывал все нити из threads. 
- * 3. В методе run исправь значения переменных:
- * 	3.1. isCurrentThreadInterrupted - должна равняться значению метода isInterrupted у текущей нити. 
- * 	3.2. threadName - должна равняться значению метода getName (реализовано в классе Thread) у текущей нити.
+ * 1. Р Р°Р·Р±РµСЂРёСЃСЊ, РєР°Рє СЂР°Р±РѕС‚Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. 
+ *  1.1. РћР±СЂР°С‚Рё РІРЅРёРјР°РЅРёРµ, С‡С‚Рѕ РѕР±СЉРµРєС‚ Water - РѕРґРёРЅ РґР»СЏ РІСЃРµС… РЅРёС‚РµР№. 
+ * 2. Р РµР°Р»РёР·СѓР№ РјРµС‚РѕРґ ourInterruptMethod, С‡С‚РѕР±С‹ РѕРЅ РїСЂРµСЂС‹РІР°Р» РІСЃРµ РЅРёС‚Рё РёР· threads. 
+ * 3. Р’ РјРµС‚РѕРґРµ run РёСЃРїСЂР°РІСЊ Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С…:
+ * 	3.1. isCurrentThreadInterrupted - РґРѕР»Р¶РЅР° СЂР°РІРЅСЏС‚СЊСЃСЏ Р·РЅР°С‡РµРЅРёСЋ РјРµС‚РѕРґР° isInterrupted Сѓ С‚РµРєСѓС‰РµР№ РЅРёС‚Рё. 
+ * 	3.2. threadName - РґРѕР»Р¶РЅР° СЂР°РІРЅСЏС‚СЊСЃСЏ Р·РЅР°С‡РµРЅРёСЋ РјРµС‚РѕРґР° getName (СЂРµР°Р»РёР·РѕРІР°РЅРѕ РІ РєР»Р°СЃСЃРµ Thread) Сѓ С‚РµРєСѓС‰РµР№ РЅРёС‚Рё.
  * 
  * @author SMD_ASY
  *
@@ -57,7 +57,7 @@ public class ListOfThreadInterrupt {
 			String threadName = Thread.currentThread().getName();
 			try {
 				while (!isCurrentThreadInterrupted) {
-					System.out.println("Обьект " + sharedResource + ", нить " + threadName);
+					System.out.println("РћР±СЊРµРєС‚ " + sharedResource + ", РЅРёС‚СЊ " + threadName);
 					Thread.sleep(1000);
 				}
 			} catch (InterruptedException ie) {

@@ -9,8 +9,8 @@ public class UkrainianHen extends Hen {
 
 	@Override
 	public String getDescription() {
-		return super.getDescription() + " Моя страна - Ukraine. Я несу " + this.getCountOfEggsPerMonth()
-				+ " яиц в месяц.";
+		return super.getDescription() + " РњРѕСЏ СЃС‚СЂР°РЅР° - Ukraine. РЇ РЅРµСЃСѓ " + this.getCountOfEggsPerMonth()
+				+ " СЏРёС† РІ РјРµСЃСЏС†.";
 	}
 
 }
