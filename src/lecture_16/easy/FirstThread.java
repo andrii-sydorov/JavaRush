@@ -1,8 +1,8 @@
 package lecture_16.easy;
 
 /**
- * Создать public static class TestThread - нить с интерфейсом Runnable.
- * TestThread должен выводить в консоль "My first thread".
+ * РЎРѕР·РґР°С‚СЊ public static class TestThread - РЅРёС‚СЊ СЃ РёРЅС‚РµСЂС„РµР№СЃРѕРј Runnable.
+ * TestThread РґРѕР»Р¶РµРЅ РІС‹РІРѕРґРёС‚СЊ РІ РєРѕРЅСЃРѕР»СЊ "My first thread".
  * 
  * @author SMD_ASY
  *
