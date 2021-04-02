@@ -7,16 +7,16 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Давай напишем программу, которая будет давать имена всем котикам, выпускаемым
- * на нашей котофабрике. Для этого нужно:
+ * Р”Р°РІР°Р№ РЅР°РїРёС€РµРј РїСЂРѕРіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ РґР°РІР°С‚СЊ РёРјРµРЅР° РІСЃРµРј РєРѕС‚РёРєР°Рј, РІС‹РїСѓСЃРєР°РµРјС‹Рј
+ * РЅР° РЅР°С€РµР№ РєРѕС‚РѕС„Р°Р±СЂРёРєРµ. Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ:
  * 
- * 1) Считывать строки (параметры) с консоли, пока пользователь не введет пустую
- * строку (Enter). 
- * 2) Для каждого параметра (имени кота): 
- * - создать объект cat класса Cat, который равен коту из getCatByKey(String параметр). 
- * - вывести на экран cat.toString()
+ * 1) РЎС‡РёС‚С‹РІР°С‚СЊ СЃС‚СЂРѕРєРё (РїР°СЂР°РјРµС‚СЂС‹) СЃ РєРѕРЅСЃРѕР»Рё, РїРѕРєР° РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РЅРµ РІРІРµРґРµС‚ РїСѓСЃС‚СѓСЋ
+ * СЃС‚СЂРѕРєСѓ (Enter). 
+ * 2) Р”Р»СЏ РєР°Р¶РґРѕРіРѕ РїР°СЂР°РјРµС‚СЂР° (РёРјРµРЅРё РєРѕС‚Р°): 
+ * - СЃРѕР·РґР°С‚СЊ РѕР±СЉРµРєС‚ cat РєР»Р°СЃСЃР° Cat, РєРѕС‚РѕСЂС‹Р№ СЂР°РІРµРЅ РєРѕС‚Сѓ РёР· getCatByKey(String РїР°СЂР°РјРµС‚СЂ). 
+ * - РІС‹РІРµСЃС‚Рё РЅР° СЌРєСЂР°РЅ cat.toString()
  * 
- * Для тестов: 
+ * Р”Р»СЏ С‚РµСЃС‚РѕРІ: 
  * vaska 
  * murka 
  * kiska 
@@ -46,11 +46,11 @@ public class InheritanceOfClassesWithList {
 		static Cat getCatByKey(String key) {
 			Cat cat = null;
 			if ("vaska".equals(key)) {
-				cat = new MaleCat("Василий");
+				cat = new MaleCat("Р’Р°СЃРёР»РёР№");
 			} else if ("murka".equals(key)) {
-				cat = new FemaleCat("Мурочка");
+				cat = new FemaleCat("РњСѓСЂРѕС‡РєР°");
 			} else if ("kiska".equals(key)) {
-				cat = new FemaleCat("Кисюлька");
+				cat = new FemaleCat("РљРёСЃСЋР»СЊРєР°");
 			} else {
 				cat = new Cat(key);
 			}
@@ -71,7 +71,7 @@ public class InheritanceOfClassesWithList {
 		}
 
 		public String toString() {
-			return "Я уличный кот " + getName();
+			return "РЇ СѓР»РёС‡РЅС‹Р№ РєРѕС‚ " + getName();
 		}
 	}
 
@@ -81,7 +81,7 @@ public class InheritanceOfClassesWithList {
 		}
 
 		public String toString() {
-			return "Я - солидный кошак по имени " + getName();
+			return "РЇ - СЃРѕР»РёРґРЅС‹Р№ РєРѕС€Р°Рє РїРѕ РёРјРµРЅРё " + getName();
 		}
 
 	}
@@ -92,7 +92,7 @@ public class InheritanceOfClassesWithList {
 		}
 
 		public String toString() {
-			return "Я - милая кошечка по имени " + getName();
+			return "РЇ - РјРёР»Р°СЏ РєРѕС€РµС‡РєР° РїРѕ РёРјРµРЅРё " + getName();
 		}
 	}
 }

@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * В этой задаче тебе нужно:
+ * Р’ СЌС‚РѕР№ Р·Р°РґР°С‡Рµ С‚РµР±Рµ РЅСѓР¶РЅРѕ:
  * 
- * Считывать с консоли данные, пока не будет введено слово "exit". 
- * Для каждого значения, кроме "exit", вызвать метод print().
- * Если значение: содержит точку '.', вызвать метод print() для Double; 
- * больше нуля, но меньше 128, вызвать метод print() для short; 
- * меньше либо равно нулю или больше либо равно 128, вызвать метод print() для Integer; 
- * иначе — вызвать метод print() для String.
+ * РЎС‡РёС‚С‹РІР°С‚СЊ СЃ РєРѕРЅСЃРѕР»Рё РґР°РЅРЅС‹Рµ, РїРѕРєР° РЅРµ Р±СѓРґРµС‚ РІРІРµРґРµРЅРѕ СЃР»РѕРІРѕ "exit". 
+ * Р”Р»СЏ РєР°Р¶РґРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ, РєСЂРѕРјРµ "exit", РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ print().
+ * Р•СЃР»Рё Р·РЅР°С‡РµРЅРёРµ: СЃРѕРґРµСЂР¶РёС‚ С‚РѕС‡РєСѓ '.', РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ print() РґР»СЏ Double; 
+ * Р±РѕР»СЊС€Рµ РЅСѓР»СЏ, РЅРѕ РјРµРЅСЊС€Рµ 128, РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ print() РґР»СЏ short; 
+ * РјРµРЅСЊС€Рµ Р»РёР±Рѕ СЂР°РІРЅРѕ РЅСѓР»СЋ РёР»Рё Р±РѕР»СЊС€Рµ Р»РёР±Рѕ СЂР°РІРЅРѕ 128, РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ print() РґР»СЏ Integer; 
+ * РёРЅР°С‡Рµ вЂ” РІС‹Р·РІР°С‚СЊ РјРµС‚РѕРґ print() РґР»СЏ String.
  * 
  * @author SMD_ASY
  *
@@ -44,19 +44,19 @@ public class Methodoverloading {
 	}
 
 	public static void print(Double value) {
-		System.out.println("Это тип Double, значение " + value);
+		System.out.println("Р­С‚Рѕ С‚РёРї Double, Р·РЅР°С‡РµРЅРёРµ " + value);
 	}
 
 	public static void print(String value) {
-		System.out.println("Это тип String, значение " + value);
+		System.out.println("Р­С‚Рѕ С‚РёРї String, Р·РЅР°С‡РµРЅРёРµ " + value);
 	}
 
 	public static void print(short value) {
-		System.out.println("Это тип short, значение " + value);
+		System.out.println("Р­С‚Рѕ С‚РёРї short, Р·РЅР°С‡РµРЅРёРµ " + value);
 	}
 
 	public static void print(Integer value) {
-		System.out.println("Это тип Integer, значение " + value);
+		System.out.println("Р­С‚Рѕ С‚РёРї Integer, Р·РЅР°С‡РµРЅРёРµ " + value);
 	}
 
 }

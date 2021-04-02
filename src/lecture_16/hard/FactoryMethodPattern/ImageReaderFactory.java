@@ -6,7 +6,7 @@ public class ImageReaderFactory {
 	static ImageReader getImageReader(ImageTypes i) {
 		ImageReader r = null;
 		if(i == null) {
-			throw new IllegalArgumentException("не правильный код картинки");
+			throw new IllegalArgumentException("РЅРµ РїСЂР°РІРёР»СЊРЅС‹Р№ РєРѕРґ РєР°СЂС‚РёРЅРєРё");
 		}
 		switch (i) {
 		case JPG:

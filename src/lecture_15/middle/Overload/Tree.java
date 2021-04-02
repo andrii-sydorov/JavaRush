@@ -10,16 +10,16 @@ public class Tree {
 
 	public void info(Object s) {
 		System.out.println(
-				String.format("Дерево № %d , метод Object, параметр %s", number, s.getClass().getSimpleName()));
+				String.format("Р”РµСЂРµРІРѕ в„– %d , РјРµС‚РѕРґ Object, РїР°СЂР°РјРµС‚СЂ %s", number, s.getClass().getSimpleName()));
 	}
 
 	public void info(Number s) {
 		System.out.println(
-				String.format("Дерево № %d , метод Number, параметр %s", number, s.getClass().getSimpleName()));
+				String.format("Р”РµСЂРµРІРѕ в„– %d , РјРµС‚РѕРґ Number, РїР°СЂР°РјРµС‚СЂ %s", number, s.getClass().getSimpleName()));
 	}
 
 	public void info(String s) {
 		System.out.println(
-				String.format("Дерево № %d , метод String, параметр %s", number, s.getClass().getSimpleName()));
+				String.format("Р”РµСЂРµРІРѕ в„– %d , РјРµС‚РѕРґ String, РїР°СЂР°РјРµС‚СЂ %s", number, s.getClass().getSimpleName()));
 	}
 }

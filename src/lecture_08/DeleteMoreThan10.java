@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 
 /**
- * Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.
- * Удалить из множества все числа больше 10.
+ * РЎРѕР·РґР°С‚СЊ РјРЅРѕР¶РµСЃС‚РІРѕ С‡РёСЃРµР»(Set<Integer>), Р·Р°РЅРµСЃС‚Рё С‚СѓРґР° 20 СЂР°Р·Р»РёС‡РЅС‹С… С‡РёСЃРµР».
+ * РЈРґР°Р»РёС‚СЊ РёР· РјРЅРѕР¶РµСЃС‚РІР° РІСЃРµ С‡РёСЃР»Р° Р±РѕР»СЊС€Рµ 10.
  * 
  * @author SMD_ASY
  *
@@ -23,7 +23,7 @@ public class DeleteMoreThan10 {
 	}
 
 	public static Set<Integer> createSet() {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		Set<Integer> s = new HashSet<Integer>();
 		final int n = 20;
 		Random r = new Random();
@@ -34,7 +34,7 @@ public class DeleteMoreThan10 {
 	}
 
 	public static Set<Integer> removeAllNumbersGreaterThan10(Set<Integer> set) {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		Iterator<Integer> it = set.iterator();
 		while (it.hasNext()) {
 			if (it.next() > 10) {

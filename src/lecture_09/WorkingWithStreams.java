@@ -9,8 +9,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
 /**
- * Программа вводит два имени файла. И копирует первый файл на место заданное
- * вторым именем.
+ * РџСЂРѕРіСЂР°РјРјР° РІРІРѕРґРёС‚ РґРІР° РёРјРµРЅРё С„Р°Р№Р»Р°. Р РєРѕРїРёСЂСѓРµС‚ РїРµСЂРІС‹Р№ С„Р°Р№Р» РЅР° РјРµСЃС‚Рѕ Р·Р°РґР°РЅРЅРѕРµ
+ * РІС‚РѕСЂС‹Рј РёРјРµРЅРµРј.
  * 
  * @author SMD_ASY
  *
@@ -33,7 +33,7 @@ public class WorkingWithStreams {
 			count++;
 		}
 
-		System.out.println("Скопировано байт " + count);
+		System.out.println("РЎРєРѕРїРёСЂРѕРІР°РЅРѕ Р±Р°Р№С‚ " + count);
 
 		fileInputStream.close();
 		fileOutputStream.close();

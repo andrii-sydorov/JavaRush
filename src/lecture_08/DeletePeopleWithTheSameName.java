@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Создать словарь (Map<String, String>) занести в него десять записей по
- * принципу "фамилия" - "имя". Удалить людей, имеющих одинаковые имена.
+ * РЎРѕР·РґР°С‚СЊ СЃР»РѕРІР°СЂСЊ (Map<String, String>) Р·Р°РЅРµСЃС‚Рё РІ РЅРµРіРѕ РґРµСЃСЏС‚СЊ Р·Р°РїРёСЃРµР№ РїРѕ
+ * РїСЂРёРЅС†РёРїСѓ "С„Р°РјРёР»РёСЏ" - "РёРјСЏ". РЈРґР°Р»РёС‚СЊ Р»СЋРґРµР№, РёРјРµСЋС‰РёС… РѕРґРёРЅР°РєРѕРІС‹Рµ РёРјРµРЅР°.
  * 
  * @author SMD_ASY
  *
@@ -25,7 +25,7 @@ public class DeletePeopleWithTheSameName {
 	}
 
 	public static Map<String, String> createMap() {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		Map<String, String> map = new HashMap<>();
 		map.put("sydorov", "andrii");
 		map.put("stibliy", "andrii");
@@ -41,7 +41,7 @@ public class DeletePeopleWithTheSameName {
 	}
 
 	public static void removeTheFirstNameDuplicates(Map<String, String> map) {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		Map<String, String> copy = new HashMap<>(map);
 		List<String> ls = new ArrayList<String>();
 		for (String key : copy.keySet()) {

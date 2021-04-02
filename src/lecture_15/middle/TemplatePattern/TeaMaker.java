@@ -4,16 +4,16 @@ public class TeaMaker extends DrinkMaker {
 
 	@Override
 	void getRightCup() {
-		System.out.println("Берем чашку для чая");
+		System.out.println("Р‘РµСЂРµРј С‡Р°С€РєСѓ РґР»СЏ С‡Р°СЏ");
 	}
 
 	@Override
 	void putIngredient() {
-		System.out.println("Насыпаем чай");
+		System.out.println("РќР°СЃС‹РїР°РµРј С‡Р°Р№");
 	}
 
 	@Override
 	void pour() {
-		System.out.println("Заливаем кипятком");
+		System.out.println("Р—Р°Р»РёРІР°РµРј РєРёРїСЏС‚РєРѕРј");
 	}
 }

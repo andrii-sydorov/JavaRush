@@ -17,21 +17,21 @@ public class SamePeople {
 
 	public static Map<String, String> createMap() {
 		Map<String, String> map = new HashMap<>();
-		map.put("Смирнов", "Сильвестр");
-		map.put("Иванов", "Дмитрий");
-		map.put("Кузнецов", "Арнольд");
-		map.put("Соколов", "Роман");
-		map.put("Попов", "Максим");
-		map.put("Лебедев", "Ярослав");
-		map.put("Новиков", "Александр");
-		map.put("Козлов", "Михаил");
-		map.put("Морозов", "Илья");
-		map.put("Петров", "Алексей");
+		map.put("РЎРјРёСЂРЅРѕРІ", "РЎРёР»СЊРІРµСЃС‚СЂ");
+		map.put("РРІР°РЅРѕРІ", "Р”РјРёС‚СЂРёР№");
+		map.put("РљСѓР·РЅРµС†РѕРІ", "РђСЂРЅРѕР»СЊРґ");
+		map.put("РЎРѕРєРѕР»РѕРІ", "Р РѕРјР°РЅ");
+		map.put("РџРѕРїРѕРІ", "РњР°РєСЃРёРј");
+		map.put("Р›РµР±РµРґРµРІ", "РЇСЂРѕСЃР»Р°РІ");
+		map.put("РќРѕРІРёРєРѕРІ", "РђР»РµРєСЃР°РЅРґСЂ");
+		map.put("РљРѕР·Р»РѕРІ", "РњРёС…Р°РёР»");
+		map.put("РњРѕСЂРѕР·РѕРІ", "РР»СЊСЏ");
+		map.put("РџРµС‚СЂРѕРІ", "РђР»РµРєСЃРµР№");
 		return map;
 	}
 
 	public static int getCountTheSameFirstName(Map<String, String> map, String name) {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		int count = 0;
 		for (Map.Entry<String, String> pair : map.entrySet()) {
 			if (pair.getValue().equals(name)) {
@@ -42,7 +42,7 @@ public class SamePeople {
 	}
 
 	public static int getCountTheSameLastName(Map<String, String> map, String lastName) {
-		// напишите тут ваш код
+		// РЅР°РїРёС€РёС‚Рµ С‚СѓС‚ РІР°С€ РєРѕРґ
 		int count = 0;
 		Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
 		while (it.hasNext()) {

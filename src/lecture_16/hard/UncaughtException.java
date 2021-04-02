@@ -1,22 +1,22 @@
 package lecture_16.hard;
 
 /**
- * Разобраться, что делает программа.
+ * Р Р°Р·РѕР±СЂР°С‚СЊСЃСЏ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°.
  * 
- * Почитать про UncaughtExceptionHandler - это важно.
+ * РџРѕС‡РёС‚Р°С‚СЊ РїСЂРѕ UncaughtExceptionHandler - СЌС‚Рѕ РІР°Р¶РЅРѕ.
  * 
- * Еще раз внимательно посмотреть программу.
+ * Р•С‰Рµ СЂР°Р· РІРЅРёРјР°С‚РµР»СЊРЅРѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РїСЂРѕРіСЂР°РјРјСѓ.
  * 
- * Разобраться - продебажить - почему наш OurUncaughtExceptionHandler не
- * срабатывает.
+ * Р Р°Р·РѕР±СЂР°С‚СЊСЃСЏ - РїСЂРѕРґРµР±Р°Р¶РёС‚СЊ - РїРѕС‡РµРјСѓ РЅР°С€ OurUncaughtExceptionHandler РЅРµ
+ * СЃСЂР°Р±Р°С‚С‹РІР°РµС‚.
  * 
- * Исправить ошибку, т.е. все должно работать. :)
+ * РСЃРїСЂР°РІРёС‚СЊ РѕС€РёР±РєСѓ, С‚.Рµ. РІСЃРµ РґРѕР»Р¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ. :)
  * 
- * Ожидаемый результат в произвольном порядке:
+ * РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ РІ РїСЂРѕРёР·РІРѕР»СЊРЅРѕРј РїРѕСЂСЏРґРєРµ:
  * 
- * Нить 1: My exception message
+ * РќРёС‚СЊ 1: My exception message
  * 
- * Нить 2: My exception message
+ * РќРёС‚СЊ 2: My exception message
  * 
  * @author SMD_ASY
  *
@@ -30,8 +30,8 @@ public class UncaughtException {
 		// TODO Auto-generated method stub
 		TestedThread commonThread = new TestedThread(handler);
 
-		Thread threadA = new Thread(commonThread, "Нить 1");
-		Thread threadB = new Thread(commonThread, "Нить 2");
+		Thread threadA = new Thread(commonThread, "РќРёС‚СЊ 1");
+		Thread threadB = new Thread(commonThread, "РќРёС‚СЊ 2");
 
 //		Thread test = new Thread(new Thread());
 

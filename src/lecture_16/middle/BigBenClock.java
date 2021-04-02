@@ -1,14 +1,14 @@
 package lecture_16.middle;
 
 /**
- * 1. Разберись, что делает программа. 
- * 2. Реализуй логику метода printTime так, чтобы каждую секунду выдавалось время начиная с установленного в конструкторе.
+ * 1. Р Р°Р·Р±РµСЂРёСЃСЊ, С‡С‚Рѕ РґРµР»Р°РµС‚ РїСЂРѕРіСЂР°РјРјР°. 
+ * 2. Р РµР°Р»РёР·СѓР№ Р»РѕРіРёРєСѓ РјРµС‚РѕРґР° printTime С‚Р°Рє, С‡С‚РѕР±С‹ РєР°Р¶РґСѓСЋ СЃРµРєСѓРЅРґСѓ РІС‹РґР°РІР°Р»РѕСЃСЊ РІСЂРµРјСЏ РЅР°С‡РёРЅР°СЏ СЃ СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅРѕРіРѕ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ.
  * 
- * Пример: 
- * В г. Лондон сейчас 23:59:58! 
- * В г. Лондон сейчас 23:59:59! 
- * В г. Лондон сейчас полночь! 
- * В г. Лондон сейчас 0:0:1!
+ * РџСЂРёРјРµСЂ: 
+ * Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 23:59:58! 
+ * Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 23:59:59! 
+ * Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ РїРѕР»РЅРѕС‡СЊ! 
+ * Р’ Рі. Р›РѕРЅРґРѕРЅ СЃРµР№С‡Р°СЃ 0:0:1!
  * 
  * @author SMD_ASY
  *
@@ -20,7 +20,7 @@ public class BigBenClock {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		Clock clock = new Clock("Лондон", 23, 59, 57);
+		Clock clock = new Clock("Р›РѕРЅРґРѕРЅ", 23, 59, 57);
 		Thread.sleep(4000);
 		isStopped = true;
 		Thread.sleep(1000);
@@ -71,9 +71,9 @@ public class BigBenClock {
 			minute = minute.length() > 1 ? minute : "0" + minutes;
 			second = second.length() > 1 ? second : "0" + seconds;
 			if (this.hours == 0 && this.minutes == 0 && this.seconds == 0) {
-				System.out.println(String.format("В г. %s сейчас полночь", this.cityName));
+				System.out.println(String.format("Р’ Рі. %s СЃРµР№С‡Р°СЃ РїРѕР»РЅРѕС‡СЊ", this.cityName));
 			} else {
-				System.out.println(String.format("В г. %s сейчас %s:%s:%s ", this.cityName, hour, minute, second));
+				System.out.println(String.format("Р’ Рі. %s СЃРµР№С‡Р°СЃ %s:%s:%s ", this.cityName, hour, minute, second));
 			}
 		}
 	}
